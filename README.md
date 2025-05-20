@@ -2,7 +2,7 @@
 ## Overview
 This project detects a laser pointer in a video stream from a Raspberry Pi camera and maps its location from pixel coordinates to real-world coordinates (in centimeters), using the camera as the origin of the coordinate system.
 
-It forms part of a larger robotics path-finding system developed by Giulia Lafratta and Bernd Porr.
+It forms part of a larger robotics path-finding system developed by [Giulia Lafratta](https://github.com/glafratta) and [Bernd Porr](https://github.com/berndporr).
 
 ## Prerequisites
 ### Hardware and OS
@@ -10,7 +10,7 @@ It forms part of a larger robotics path-finding system developed by Giulia Lafra
 - Compatible Raspberry Pi camera module
 
 ### libcamera2opencv
-- The project uses libcamera2opencv for accessing video frames. It relies on modifying the saturation parameter, which is not yet available in the main branch (as of 20/05/2025). Please use the version from the pending pull request (link to be added once available).
+- The project uses [libcamera2opencv](https://github.com/berndporr/libcamera2opencv/) by [Bernd Porr](https://github.com/berndporr) for accessing video frames. It relies on modifying the saturation parameter, which is not yet available in the main branch (as of 20/05/2025). Please use the version from the pending pull request (link to be added once available).
 - Follow the installation instructions provided in the libcamera2opencv repository.
 
 ## Project Structure
