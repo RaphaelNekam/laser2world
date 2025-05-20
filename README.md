@@ -6,7 +6,7 @@ It forms part of a larger robotics path-finding system developed by [Giulia Lafr
 
 ## Prerequisites
 ### Hardware and OS
-- Raspberry Pi running Raspbian OS Bookworm
+- Raspberry Pi 3B+ running Raspbian OS Bookworm
 - Compatible Raspberry Pi camera module
 
 ### libcamera2opencv
