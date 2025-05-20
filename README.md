@@ -10,7 +10,7 @@ It forms part of a larger robotics path-finding system developed by [Giulia Lafr
 - Compatible Raspberry Pi camera module
 
 ### libcamera2opencv
-- The project uses [libcamera2opencv](https://github.com/berndporr/libcamera2opencv/) by [Bernd Porr](https://github.com/berndporr) for accessing video frames. It relies on modifying the saturation parameter, which is not yet available in the main branch (as of 20/05/2025). Please use the version from the pending pull request (link to be added once available).
+- The project uses [libcamera2opencv](https://github.com/berndporr/libcamera2opencv/) by [Bernd Porr](https://github.com/berndporr) for accessing video frames. It relies on modifying the saturation parameter, which is not yet available in the main branch (as of 20/05/2025). Please use the version from the [pending pull request](https://github.com/berndporr/libcamera2opencv/pull/1) or my [repository fork](https://github.com/RaphaelNekam/libcamera2opencv_fork).
 - Follow the installation instructions provided in the libcamera2opencv repository.
 
 ## Project Structure
