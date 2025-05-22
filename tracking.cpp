@@ -163,16 +163,14 @@ cv::Mat Tracking::filterRoundClustersByShape(const cv::Mat& binaryMask, std::pai
 
 
 cv::Mat Tracking::keepLargestFeature(const cv::Mat& binary_mask) {
-	// 1. Find connected components with stats
 	cv::Mat labels, stats, centroids;
 	int num_labels = cv::connectedComponentsWithStats(binary_mask, labels, stats, centroids, 8, CV_32S);
 
-	// 2. If no components other than background, return original
 	if (num_labels <= 1) {
 		return binary_mask.clone();
 	}
 
-	// 3. Find the largest component (excluding background)
+	// Find the largest component (excluding background)
 	int largest_label = 1;
 	int largest_area = stats.at<int>(1, cv::CC_STAT_AREA);
 	for (int i = 2; i < num_labels; ++i) {
@@ -183,7 +181,6 @@ cv::Mat Tracking::keepLargestFeature(const cv::Mat& binary_mask) {
 		}
 	}
 
-	// 4. Create a mask with only the largest component
 	cv::Mat largest_mask = cv::Mat::zeros(binary_mask.size(), CV_8UC1);
 	largest_mask.setTo(255, labels == largest_label);
 
