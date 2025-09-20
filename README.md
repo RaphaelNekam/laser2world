@@ -4,6 +4,19 @@ This project detects a laser pointer in a video stream from a Raspberry Pi camer
 
 It forms part of a larger robotics path-finding system developed by [Giulia Lafratta](https://github.com/glafratta) and [Bernd Porr](https://github.com/berndporr).
 
+## Table of Contents
+- [Report](#report)
+- [Prerequisites](#prerequisites)
+  - [Hardware and OS](#hardware-and-os)
+  - [libcamera2opencv](#libcamera2opencv)
+- [Project Structure](#project-structure)
+- [Building the Project](#building-the-project)
+- [Running example executables](#running-example-executables)
+  - [Running Calibration](#running-calibration)
+  - [Running Tracking](#running-tracking)
+- [Integration with Custom Code](#integration-with-custom-code)
+- [Adjustments](#adjustments)
+
 ## Report
 Please find the full report [here](https://github.com/RaphaelNekam/laser2world/blob/main/laser2world_Report_Nekam.pdf) (Parts about LiDAR removed as not done by myself). The full document explores further techniques for tracking and pixel-to-real-world coordinate translation and compares them.
 
